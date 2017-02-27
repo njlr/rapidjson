@@ -1,0 +1,19 @@
+cxx_binary(
+  name = 'capitalize',
+  srcs = glob([
+    'capitalize/**/*.cpp',
+  ]),
+  deps = [
+    '//:rapidjson',
+  ],
+)
+
+cxx_binary(
+  name = 'simpledom',
+  srcs = glob([
+    'simpledom/**/*.cpp',
+  ]),
+  deps = [
+    '//:rapidjson',
+  ],
+)
